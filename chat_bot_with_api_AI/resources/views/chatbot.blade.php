@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    {{ $comments }}
     @include('header.header')
     @include('slider.slider')
     @include('footer.footer')
