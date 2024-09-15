@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\APIController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\ChatBotController;
 Route::get('/', [ChatBotController::class, 'index']);
+// routes/web.php
+Route::get('/', [APIController::class, 'getSubcategories']);
